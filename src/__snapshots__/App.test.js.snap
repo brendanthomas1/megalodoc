@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the default view 1`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-4"
+    >
+      <img
+        alt="logo"
+        src="test-file-stub"
+      />
+      <h2>
+        Welcome to React
+      </h2>
+      <p>
+        To get started, edit 
+        <code>
+          src/App.js
+        </code>
+         and save to reload.
+      </p>
+    </div>
+    <div
+      className="col"
+    >
+      Main content here
+    </div>
+  </div>
+</div>
+`;

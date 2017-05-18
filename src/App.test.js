@@ -1,8 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from 'react'
+import renderer from 'react-test-renderer'
+import App from './App'
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-});
+it('renders the default view', () => {
+  const component = renderer.create(<App></App>)
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+})
